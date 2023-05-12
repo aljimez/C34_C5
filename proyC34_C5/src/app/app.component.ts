@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyC34_C5';
+
+nombre ='Alejandro Jiménez Álvarez';
+
 }
