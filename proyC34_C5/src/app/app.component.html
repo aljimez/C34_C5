@@ -6,52 +6,151 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<h1 style="text-align:center">
-Bienvenido a {{title}} {{nombre}}
-</h1>
-<div class="container-lg border border-dark align-middle container mt-10">
-  <table class="table text-center">
-    <tr>
-      <div colspan="2" class="row align-items-center"><input type="text" id="result" readonly>
+<h1 style="text-align: center">Calculadora de {{ nombre }}</h1>
+<div class="container border border-dark align-middle container mt-10">
+  <div class="table text-center">
+    <div class="row">
+      <div class="row align-items-center">
+        <input type="text" id="result" readonly />
       </div>
-    </tr>
-    <tr>
-      <td onclick="display('9')" class=" text-white bg-secondary border border-dark"> 9</td>
-      <td onclick="display('8')" class=" text-white bg-secondary border border-dark">8</td>
-      <td onclick="display('7')" class=" text-white bg-secondary border border-dark">7</td>
-      <td onclick="clearResult()"class=" text-white bg-info border border-dark">DEL</td>
-    </tr>
-    <tr>
-      <td onclick="display('6')" class=" text-white bg-secondary border border-dark">6</td>
-      <td onclick="display('5')" class=" text-white bg-secondary border border-dark">5</td>
-      <td onclick="display('4')" class=" text-white bg-secondary border border-dark">4</td>
-      <td  onclick="display('/')" class=" text-white bg-info border border-dark">/</td>
-    </tr>
-    <tr>
-      <td  onclick="display('3')" class=" text-white bg-secondary border border-dark">3</td>
-      <td  onclick="display('2')" class=" text-white bg-secondary border border-dark">2</td>
-      <td  onclick="display('1')" class=" text-white bg-secondary border border-dark">1</td>
-      <td  onclick="display('*')" class=" text-white bg-info border border-dark">X</td>
-    </tr>
-    <tr>
-      <td  onclick="display('.')" class=" text-white bg-secondary border border-dark">.</td>
-      <td  onclick="display('0')" class=" text-white bg-secondary border border-dark">0</td>
-      <td  onclick="display('00')" class=" text-white bg-secondary border border-dark">00</td>
-      <td  onclick="display('-')" class=" text-white bg-info border border-dark">-</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td  onclick="display('+')" class=" text-white bg-info border border-dark">+</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td  onclick="calculate()" class=" text-white bg-info border border-dark">=</td>
-    </tr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          onclick="display('9')"
+          class="text-white bg-secondary border border-dark col-sm"
+        >
+          9
+        </div>
+        <div
+          onclick="display('8')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          8
+        </div>
+        <div
+          onclick="display('7')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          7
+        </div>
+        <div
+          onclick="clearResult()"
+          class="col-sm text-white bg-info border border-dark"
+        >
+          DEL
+        </div>
+      </div>
+    </div>
 
-  </table>
+    <div class="container">
+      <div class="row">
+        <div
+          onclick="display('6')"
+          class="text-white bg-secondary border border-dark col-sm"
+        >
+          6
+        </div>
+        <div
+          onclick="display('5')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          5
+        </div>
+        <div
+          onclick="display('4')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          4
+        </div>
+        <div
+          onclick="display('/')"
+          class="col-sm text-white bg-info border border-dark"
+        >
+          /
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          onclick="display('3')"
+          class="text-white bg-secondary border border-dark col-sm"
+        >
+          3
+        </div>
+        <div
+          onclick="display('2')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          2
+        </div>
+        <div
+          onclick="display('1')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          1
+        </div>
+        <div
+          onclick="display('*')"
+          class="col-sm text-white bg-info border border-dark"
+        >
+          X
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          onclick="display('.')"
+          class="text-white bg-secondary border border-dark col-sm"
+        >
+          .
+        </div>
+        <div
+          onclick="display('0')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          0
+        </div>
+        <div
+          onclick="display('00')"
+          class="col-sm text-white bg-secondary border border-dark"
+        >
+          00
+        </div>
+        <div
+          onclick="display('-')"
+          class="col-sm text-white bg-info border border-dark"
+        >
+          -
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="text-white bg-secondary border border-dark col-sm"></div>
+        <div class="col-sm text-white bg-secondary border border-dark"></div>
+        <div class="col-sm text-white bg-secondary border border-dark"></div>
+        <div class="col-sm text-white bg-info border border-dark">+</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="text-white bg-secondary border border-dark col-sm"></div>
+        <div class="col-sm text-white bg-secondary border border-dark"></div>
+        <div class="col-sm text-white bg-secondary border border-dark"></div>
+        <div
+          onclick="calculate()"
+          class="col-sm text-white bg-info border border-dark"
+        >
+          =
+        </div>
+      </div>
+    </div>
   </div>
+</div>
